@@ -13,7 +13,7 @@ final class AnimalDataSource {
         guard let path = NSBundle.mainBundle().pathForResource("Animals", ofType: "plist"),
             animalArray = NSArray(contentsOfFile: path) as? [[String: String]] else {return []}
 
-        return animalArray.map {
+        let array = animalArray.map {
             a in
             return Animal(name: a["name"]!,
                 latinName: a["species"]!,
@@ -22,16 +22,26 @@ final class AnimalDataSource {
                 authorName: a["authorName"]!,
                 authorPhotoName: a["authorPhoto"]!)
         }.sort{$0 < $1}
+        
+        print(array)
+        
+        return array
     }()
 }
 
-struct Animal {
+struct Animal : CustomDebugStringConvertible {
     let name: String
     let latinName: String
     let text: String
     let imageName: String? // some animals don't have photos
     let authorName: String
     let authorPhotoName: String
+    
+    var debugDescription: String {
+        get {
+            return "\(name) - \(latinName)"
+        }
+    }
 }
 
 extension Animal: Comparable {}

@@ -18,11 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         guard let theWindow = self.window,
             let splitViewController: UISplitViewController = theWindow.rootViewController as? UISplitViewController,
-            let navigationController = splitViewController.viewControllers[0] as? UINavigationController,
-            let masterViewController = navigationController.topViewController as? AnimalListViewController
+            let masterNavigationController = splitViewController.viewControllers[0] as? UINavigationController,
+            let masterViewController = masterNavigationController.topViewController as? AnimalListViewController,
+            let detailNavController = splitViewController.viewControllers[1] as? UINavigationController,
+            let detailViewController = detailNavController.topViewController as? AnimalViewController
             else {fatalError("View hierarchy not correct!")}
         
         splitViewController.delegate = masterViewController
+        detailViewController.animal = masterViewController.animalData.animals[0]
         return true
     }
 

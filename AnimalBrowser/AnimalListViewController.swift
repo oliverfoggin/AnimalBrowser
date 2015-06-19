@@ -37,7 +37,7 @@ class AnimalListViewController: UITableViewController, UISplitViewControllerDele
             detailController = controller.topViewController as? AnimalViewController,
             indexPath = tableView.indexPathForSelectedRow,
             animal: Animal = animalData.animals[indexPath.row]
-            else {return}
+            else {fatalError("No animal at the index of the cell!")}
         
         detailController.animal = animal
     }
