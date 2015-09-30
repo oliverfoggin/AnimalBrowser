@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A178w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -30,20 +30,20 @@
                         <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
                         <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
+                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448" userLabel="Root view">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iO-dH-6rw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="590"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-M6-8WL">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-M6-8WL" userLabel="Top stack view">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="664"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cB8-hb-ef9">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cB8-hb-ef9" userLabel="Animal name stack view">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="42"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf8-TZ-OL9">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf8-TZ-OL9">
                                                         <rect key="frame" x="278" y="0.0" width="45" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -56,7 +56,7 @@
                                                             <rect key="frame" x="15" y="0.0" width="45" height="20"/>
                                                         </variation>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latin Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egB-Nd-Kjr">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latin Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egB-Nd-Kjr">
                                                         <rect key="frame" x="263" y="25" width="74" height="17"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
@@ -72,7 +72,7 @@
                                                 </subviews>
                                                 <animations/>
                                             </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Badger" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-1W-Za1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Badger" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-1W-Za1">
                                                 <rect key="frame" x="0.0" y="52" width="600" height="300"/>
                                                 <animations/>
                                                 <constraints>
@@ -82,7 +82,7 @@
                                                     <rect key="frame" x="0.0" y="52" width="400" height="200"/>
                                                 </variation>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4Y-sn-lI5">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4Y-sn-lI5">
                                                 <rect key="frame" x="0.0" y="362" width="600" height="163"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,10 +96,10 @@
                                                     <rect key="frame" x="0.0" y="262" width="400" height="247"/>
                                                 </variation>
                                             </textView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IT1-AW-xk0">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IT1-AW-xk0" userLabel="Author stack view">
                                                 <rect key="frame" x="0.0" y="535" width="600" height="129"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBj-SI-mUD">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBj-SI-mUD">
                                                         <rect key="frame" x="274" y="0.0" width="52" height="20"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -112,7 +112,7 @@
                                                             <rect key="frame" x="14" y="0.0" width="52" height="20"/>
                                                         </variation>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Darwin" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-SP-zck">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Darwin" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-SP-zck">
                                                         <rect key="frame" x="260" y="25" width="80" height="104"/>
                                                         <animations/>
                                                         <constraints>
@@ -138,6 +138,7 @@
                                     <constraint firstAttribute="bottom" secondItem="AeT-M6-8WL" secondAttribute="bottom" id="4g5-qK-Zm5"/>
                                     <constraint firstAttribute="trailing" secondItem="AeT-M6-8WL" secondAttribute="trailing" id="8mJ-px-Kux"/>
                                     <constraint firstItem="AeT-M6-8WL" firstAttribute="top" secondItem="5iO-dH-6rw" secondAttribute="top" id="CPR-8W-uwW"/>
+                                    <constraint firstItem="AeT-M6-8WL" firstAttribute="width" secondItem="5iO-dH-6rw" secondAttribute="width" id="g0a-UN-YgW"/>
                                     <constraint firstItem="AeT-M6-8WL" firstAttribute="leading" secondItem="5iO-dH-6rw" secondAttribute="leading" id="wBJ-nw-aQQ"/>
                                 </constraints>
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
@@ -151,7 +152,6 @@
                             <constraint firstItem="5iO-dH-6rw" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="top" id="74s-1N-t0q"/>
                             <constraint firstAttribute="trailing" secondItem="5iO-dH-6rw" secondAttribute="trailing" id="9nB-SB-qSq"/>
                             <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="5iO-dH-6rw" secondAttribute="bottom" constant="10" id="V3l-S9-L4k"/>
-                            <constraint firstItem="AeT-M6-8WL" firstAttribute="width" secondItem="svH-Pt-448" secondAttribute="width" id="X2V-Ca-KQh"/>
                             <constraint firstItem="5iO-dH-6rw" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="zXj-in-zUe"/>
                         </constraints>
                     </view>
@@ -208,7 +208,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dZp-PU-9Va">
                                             <rect key="frame" x="8" y="8" width="584" height="63"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Badger" translatesAutoresizingMaskIntoConstraints="NO" id="8sO-Ve-D0m">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Badger" translatesAutoresizingMaskIntoConstraints="NO" id="8sO-Ve-D0m">
                                                     <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
                                                     <animations/>
                                                     <constraints>
@@ -221,13 +221,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
                                                     </variation>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="471-E6-Ozo">
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="471-E6-Ozo">
                                                     <rect key="frame" x="73" y="0.0" width="511" height="63"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WSO-6n-LAl">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WSO-6n-LAl">
                                                             <rect key="frame" x="0.0" y="11" width="511" height="42"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Badger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wB-FK-g1s">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Badger" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wB-FK-g1s">
                                                                     <rect key="frame" x="0.0" y="0.0" width="55" height="20"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -240,7 +240,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="55" height="20"/>
                                                                     </variation>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" text="Badger Badgus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7r-sd-L0s">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Badger Badgus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7r-sd-L0s">
                                                                     <rect key="frame" x="0.0" y="25" width="99" height="17"/>
                                                                     <animations/>
                                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
